@@ -21,6 +21,10 @@ class WorkResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-building-office-2';
 
+    protected static ?string $navigationLabel = 'Our Work';
+
+
+
     public static function form(Form $form): Form
     {
         return $form
