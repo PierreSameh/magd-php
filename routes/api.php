@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Public\ContactController;
 use App\Http\Controllers\Public\NewsController;
 use App\Http\Controllers\Public\WorkController;
 use Illuminate\Http\Request;
@@ -18,3 +19,6 @@ Route::get('/our-work/record', [WorkController::class, 'get']);
 Route::get('/news/all', [NewsController::class, 'getAll']);
 Route::get('/news/three-only', [NewsController::class, 'getFirstThree']);
 Route::get('/news/record', [NewsController::class, 'get']);
+
+//ContactController
+Route::post('/contact', [ContactController::class, "send"]);
