@@ -31,7 +31,6 @@ class WorkResource extends Resource
                     ->image()
                     ->disk('public')
                     ->directory('work')
-                    ->visibility('public')
                     ->required(),
                 Forms\Components\Textarea::make('description')
                     ->required()
